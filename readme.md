@@ -1,1 +1,2 @@
-The complete, unredacted of the source code to a build of FRZN.APP dating from February 21, 2024.
+# FRZN.APP
+The **complete**, source code to the build of **FRZN.APP** updated from February 12, 2024.
