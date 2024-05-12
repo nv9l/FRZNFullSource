@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+@keyframes image {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0px); }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5E17EB;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+nav {
+  overflow: hidden;
+  padding-right: 5%;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+.brand {
+  float: left;
+  padding: 14px 12px;
+  padding-left: 5%;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 148px;
+  height: 45px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.brand:hover img {
+  transform: scale(1.02);
+}
+
+.brand img {
+  display: block;
+  width: 148px;
+  height: 45px;
+}
+
+
+.container,
+.containerb {
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 8px;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.containerb {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.containerb:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  overflow: hidden;
+  font-size: 3em;
+  transform: translateY(0px);
+  animation: image 3s ease-in-out infinite;
+}
+
+.image img {
+  height: auto;
+  display: block;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a, .brand, .container, .containerb {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.play {
+  background-color: #4d12c5;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 13.5px 23.5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.play:hover {
+  background-color: #3b0f9e;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-8px);
+}
+
+.avisits {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
